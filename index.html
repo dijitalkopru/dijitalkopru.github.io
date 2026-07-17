@@ -414,6 +414,94 @@
             .card-desc { -webkit-line-clamp: 2; font-size: 0.8rem; }
             .download-btn { font-size: 0.75rem; padding: 8px 12px; }
         }
+		
+		
+		/* ── FOOTER ── */
+        footer {
+            background: #fff;
+            border-top: 2px solid var(--primary-soft);
+            padding: 28px 20px;
+            text-align: center;
+        }
+
+        .footer-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 18px;
+        }
+
+        .footer-logos img {
+            height: 48px;
+            width: auto;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            margin-bottom: 16px;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: var(--primary-soft);
+            transition: background 0.2s;
+        }
+
+        .social-icons a:hover {
+            background: var(--primary);
+        }
+
+        .social-icons a:hover img {
+            filter: invert(1) brightness(10);
+        }
+
+        .social-icons img {
+            height: 18px;
+            width: 18px;
+        }
+
+        footer p {
+            font-size: 13px;
+            color: var(--text-light);
+        }
+
+        .globe-wrap {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0 10px;
+        }
+
+        .globe-wrap>div {
+            width: 240px;
+            height: 240px;
+            overflow: hidden;
+        }
+
+        .globe-inner {
+            transform: scale(0.8);
+            transform-origin: top center;
+            pointer-events: none;
+        }
+
+        /* ── RESPONSİF ── */
+        @media (max-width: 600px) {
+            .cards-grid {
+                grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+                gap: 10px;
+            }
+
+            header {
+                height: 180px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -55314,5 +55402,40 @@
             if (e.key === 'Escape') closeModal();
         });
     </script>
+	
+	
+	    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logos">
+            <a href="https://yyegm.meb.gov.tr/" target="_blank">
+                <img src="icons/logo2.png" alt="MEB Logo">
+            </a>
+            <a href="https://ulkemyanimda.github.io/" target="_blank">
+                <img src="icons/logo1.png" alt="Ülkem Yanımda Logo">
+            </a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/ulkemyanimda" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/ulkemyanimda" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/x.svg" alt="Twitter/X">
+            </a>
+            <a href="https://www.facebook.com/ulkemyanimda" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://www.youtube.com/@ulkem_yanimda" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="YouTube">
+            </a>
+
+        </div>
+        <p>&copy; 2026 ÜLKEM YANIMDA!</p>
+        <br>
+
+
+
+
+
+    </footer>
 </body>
 </html>
